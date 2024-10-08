@@ -1,0 +1,133 @@
+@import 'common';
+@import 'mixin';
+@import 'var';
+
+footer {
+    font-family: $font-family;
+    background-color: $darkOrange;
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 418px 123px 291px 280px;
+        row-gap: 30px;
+        padding-top: 149px;
+        padding-bottom: 93px;
+
+        @include scl(1170px) {
+            grid-template-columns: 123px 151px 280px;
+            column-gap: 68px;
+        }
+
+        @include scl(768px) {
+            grid-template-columns: 123px 1fr;
+            padding-top: 92px;
+            padding-bottom: 60px;
+        }
+
+        @include scl(480px) {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-social {
+            margin-right: 66px;
+
+            @include scl(1170px) {
+                grid-column: 1 / 4;
+                margin-right: 0;
+                margin-bottom: calc(66px - 30px);
+            }
+
+            @include scl(768px) {
+                grid-column: 1 / 3;
+            }
+
+            @include scl(480px) {
+                grid-column: 1;
+            }
+
+            .logo-name {
+                color: $white;
+            }
+
+            .footer-descr {
+                margin-top: 45px;
+                margin-bottom: 39px;
+
+                @include scl(768px) {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .footer-social-links {
+                display: flex;
+                gap: 30px;
+
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .footer-information {
+            margin-left: 70px;
+            margin-right: 70px;
+
+            @include scl(1170px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .footer-contacts {
+            @include scl(768px) {
+                grid-column: 1 / 3;
+            }
+
+            @include scl(480px) {
+                grid-column: 1;
+            }
+        }
+
+        h4 {
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 200%;
+            color: #ff8a00;
+        }
+
+        menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                list-style-type: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 200%;
+            color: #e3e2e0;
+        }
+    }
+
+    .copyright {
+        padding-bottom: 74px;
+        text-align: center;
+
+        @include scl(480px) {
+            padding-bottom: 52px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 200%;
+        color: #e3e2e0;
+    }
+}

@@ -1,0 +1,263 @@
+@import 'reset';
+@import 'common';
+@import 'modal-window-fun';
+@import 'log-in';
+@import 'header';
+@import 'footer';
+@import 'mixin';
+@import 'var';
+
+
+.wrapper {
+    font-family: $font-family;
+
+    .contact-unit {
+        padding-top: 138px;
+        padding-bottom: 114px;
+        text-align: center;
+
+        @include scl(768px) {
+            padding-top: 30px;
+            padding-bottom: 100px;
+        }
+
+        h2 {
+            font-family: $second-family;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: normal;
+            text-align: center;
+            color: #311f09;
+
+            @include scl(768px) {
+                text-transform: lowercase;
+                font-size: 56px;
+            }
+
+            @include scl(480px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            margin-top: 36px;
+            margin-bottom: 108px;
+            font-size: 25px;
+            line-height: normal;
+            color: #5c4529;
+
+            @include scl(768px) {
+                margin-top: 15px;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+
+            @include scl(480px) {
+                font-size: 12px;
+            }
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 32px;
+            row-gap: 50px;
+
+            @include scl(768px) {
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+            }
+
+            input {
+                min-width: 200px;
+                box-sizing: border-box;
+                padding: 36px 0;
+                padding-left: 80px;
+                border-radius: 20px;
+                border: none;
+                font-family: inherit;
+                font-size: 25px;
+                line-height: 110%;
+                color: #a0978c;
+                background-color: rgba(208, 204, 199, 0.1);
+
+                @include scl(768px) {
+                    padding: 19px 0;
+                    padding-left: 25px;
+                    font-size: 18px;
+                }
+
+                @include scl(480px) {
+                    font-size: 11px;
+                }
+            }
+
+            textarea {
+                grid-column: 1 / 3;
+                height: 385px;
+                padding: 36px 80px;
+                border-radius: 20px;
+                border: none;
+                font-family: inherit;
+                font-size: 25px;
+                line-height: 110%;
+                color: #a0978c;
+                background-color: rgba(208, 204, 199, 0.1);
+
+                @include scl(768px) {
+                    grid-column: 1;
+                    height: 325px;
+                    padding: 19px 0;
+                    padding-left: 25px;
+                    font-size: 18px;
+                }
+            }
+
+            #contactSubmit {
+                grid-column: 1 / 3;
+                justify-self: center;
+                width: 540px;
+                padding-left: 0;
+                color: $white;
+                background-color: $orange;
+
+                @include scl(768px) {
+                    grid-column: 1;
+                    width: 100%;
+                    padding: 22px 0;
+                }
+
+                @include scl(480px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .map {
+        position: relative;
+
+        .spot-descr {
+            position: absolute;
+            margin: 0 auto;
+            top: 70px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-items: center;
+            align-items: center;
+            width: 726px;
+            height: 214px;
+            padding: 18px 18px 44px;
+            border-radius: 13px;
+            background: url(../images/bkg-spot.png) no-repeat;
+
+            @include scl(768px) {
+                top: 20px;
+                grid-template-columns: auto 1fr;
+                column-gap: 20px;
+                width: 250px;
+                height: 121px;
+                padding: 8px 8px 19px;
+                background: url(../images/bkg-spot.png) 0/100% 100% no-repeat;
+            }
+
+            .spot-close {
+                position: absolute;
+                top: -14px;
+                right: -14px;
+                border-radius: 100%;
+
+                @include scl(768px) {
+                    top: -8px;
+                    right: -8px;
+                }
+
+                svg {
+                    cursor: pointer;
+
+                    @include scl(768px) {
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+
+            .spot-photo {
+                @include scl(768px) {
+                    grid-row: 1 / 3;
+                }
+
+                img {
+                    @include scl(768px) {
+                        width: 71px;
+                        height: 86px;
+                    }
+                }
+            }
+
+            .spot-descr-exp {
+                @include scl(768px) {
+                    justify-self: start;
+                }
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 110%;
+                    color: #311f09;
+
+                    @include scl(768px) {
+                        font-size: 9px;
+                    }
+                }
+
+                h6+p {
+                    padding-top: 22px;
+                    padding-bottom: 9px;
+
+                    @include scl(768px) {
+                        padding-top: 10px;
+                        padding-bottom: 4px;
+                    }
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 153%;
+                    color: #311f09;
+
+                    @include scl(768px) {
+                        font-size: 7px;
+                    }
+                }
+            }
+
+            .spot-contact {
+                @include scl(768px) {
+                    justify-self: start;
+                }
+                a {
+                    img {
+                        @include scl(768px) {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 662px;
+
+            @include scl(768px) {
+                height: 348px;
+            }
+        }
+    }
+}

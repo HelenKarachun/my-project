@@ -1,0 +1,18 @@
+.modal-window {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgb(63, 167, 47, 0.7);
+    overflow-y: auto;
+
+    .modal-box {
+        max-width: 80vw;
+        background-color: $white;
+    }
+}

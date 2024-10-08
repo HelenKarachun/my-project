@@ -1,0 +1,68 @@
+@import 'mixin';
+@import 'var';
+
+.wrapper {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.center {
+    width: 1112px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include scl(1250px) {
+        width: calc(100% - 50px);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    .logo-letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 51px;
+        height: 51px;
+        border-radius: 100%;
+        font-weight: 600;
+        font-size: 25px;
+        color: $white;
+        background-color: $orange;
+    }
+
+    .logo-name {
+        font-weight: 600;
+        font-size: 14px;
+        color: $darkOrange;
+
+        .logo-name-orange {
+            color: $orange;
+        }
+    }
+}
+
+.orange-green-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 163px;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 200%;
+    font-family: $font-family;
+    color: $white;
+    background-color: $orange;
+}
+
+.orange-green-btns:hover {
+    background: $green;
+}
+
+.invisible {
+    visibility: hidden;
+}

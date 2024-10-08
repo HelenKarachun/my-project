@@ -1,0 +1,5 @@
+@mixin scl($w) {
+    @media only screen and (max-width: $w) {
+        @content;
+    }
+}

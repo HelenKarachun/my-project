@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="center">
+            <div class="logo">
+                <a href="./homepage.html" class="logo-letter">D</a>
+                <h3 class="logo-name">Delizi<span class="logo-name-orange">oso</span></h3>
+            </div>
+            <div class="main-navigation">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="./homepage.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="#">Order online</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="./contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+                <img src="./images/header/burger.svg" alt="burger" class="burger">
+            </div>
+            <div class="header-btns">
+                <div class="basket">
+                    <img src="./images/header/basket.png" alt="basket">
+                    <span class="counter">3</span>
+                </div>
+                <div class="log-in">
+                    <button class="log-in-btn">Log in</button>
+                    <a href="./log-in.html" class="log-in-btn-link">Log in</a>
+                </div>
+            </div>
+            <div class="modal-window">
+                <div class="modal-box">
+                    <div class="logo">
+                        <a href="./homepage.html" class="logo-letter">D</a>
+                    </div>
+                    <div class="modal-form-login">
+                        <h2>Login</h2>
+                        <p>
+                            Don't have an account? <a href="#">Sign up</a>
+                        </p>
+                        <form autocomplete="on" method="get" name="login">
+                            <input type="email" name="email" placeholder="Email address" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <div class="align-modal-item">
+                                <div class="align-checkbox">
+                                    <input type="checkbox" name="remember" id="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <a href="#">Forget Password?</a>
+                            </div>
+                            <input type="submit" value="Log in">
+                            <button type="submit">
+                                <img src="./images/google.svg" alt="google">
+                                <span>Log in with google</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="cuisine-unit center">
+            <div class="left-cuisine-item">
+                <h3>Restaurant</h3>
+                <h2>Italian Cuisine</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit
+                    tristique donec eget.
+                </p>
+                <div class="cuisine-btns">
+                    <div class="cuisine-order">
+                        <a href="#" class="orange-green-btns">Order now</a>
+                    </div>
+                    <div class="cuisine-reservation">
+                        <a href="#" class="orange-green-btns">Reservation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-cuisine-item">
+                <img data-aos="zoom-in" data-aos-duration="3000" src="./images/dish-cuisine-unit.png"
+                    alt="dish-cuisine">
+            </div>
+        </section>
+
+        <section class="welcome-unit">
+            <div class="left-welcome-item">
+                <img data-aos="zoom-in" data-aos-duration="3000" src="./images/dish-welcome-unit.png"
+                    alt="dish-welcome">
+            </div>
+            <div class="right-welcome-item">
+                <h1>
+                    Welcome to <span>delizioso</span>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin.
+                    Congue nibh nulla malesuada ultricies nec quam
+                </p>
+                <a href="./menu.html" class="orange-green-btns">See our menu</a>
+            </div>
+        </section>
+
+        <section class="menu-unit">
+            <h2>Our popular menu</h2>
+            <div class="menu-categories">
+                <div class="menu-categories-item">All catagory</div>
+                <div class="menu-categories-item">Dinner</div>
+                <div class="menu-categories-item">Lunch</div>
+                <div class="menu-categories-item">Dessert</div>
+                <div class="menu-categories-item">Drink</div>
+            </div>
+            <div class="menu-dishes center">
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish1-menu-unit.png" alt="dish1">
+                    <h3>Spaghetti</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish2-menu-unit.png" alt="dish2">
+                    <h3>Gnocchi</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish3-menu-unit.png" alt="dish3">
+                    <h3>Rovioli</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish4-menu-unit.png" alt="dish4">
+                    <h3>Penne Alla Vodak</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish5-menu-unit.png" alt="dish5">
+                    <h3>Risoto</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-dishes-item">
+                    <img src="./images/menu-unit/dish6-menu-unit.png" alt="dish6">
+                    <h3>Splitza Signature</h3>
+                    <div class="dishes-stars">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star">
+                        <img src="./images/menu-unit/star.svg" alt="star" class="invisible">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="star-black">
+                        <img src="./images/menu-unit/star-black.svg" alt="star" class="invisible" class="star-black">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur<span class="dishes-dots">...</span> <span
+                            class="mobile-hidden">adipiscing elit. Egestas consequat mi eget auctor
+                            aliquam, diam.</span>
+                    </p>
+                    <div class="dishes-price-order">
+                        <div class="dishes-price">
+                            <span>$12.05</span>
+                        </div>
+                        <div class="dishes-order">
+                            <a href="#" class="orange-green-btns">Order now</a>
+                            <a href="#" class="mobile-order">|<span>|</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-shift">
+                <div class="menu-shift-left">
+                    <img src="./images/menu-unit/left-arrow.svg" alt="left-arrow">
+                </div>
+                <div class="menu-shift-center">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+                <div class="menu-shift-right">
+                    <img src="./images/menu-unit/right-arrow.svg" alt="right-arrow">
+                </div>
+            </div>
+        </section>
+
+        <section class="reserve-unit">
+            <div class="left-reserve-unit">
+                <img src="./images/picture-reserve-unit.png" alt="picture">
+            </div>
+            <div class="right-reserve-unit">
+                <h2>
+                    Let's reserve <span>a table</span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin.
+                    Congue nibh nulla malesuada ultricies nec quam
+                </p>
+                <div class="reserve-unit-btn">
+                    <a href="#" class="orange-green-btns">Reservation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="chef center">
+            <h2>
+                Our greatest chef
+            </h2>
+            <div class="chef-names">
+                <div class="chef-names-item">
+                    <img src="./images/chef1.png" alt="chef1">
+                    <h3>Betran Komar</h3>
+                    <p>Head chef</p>
+                </div>
+                <div class="chef-names-item">
+                    <img src="./images/chef2.png" alt="chef2">
+                    <h3>Ferry Sauwi</h3>
+                    <p>Chef</p>
+                </div>
+                <div class="chef-names-item">
+                    <img src="./images/chef3.png" alt="chef3">
+                    <h3>Iswan Dracho</h3>
+                    <p>Chef</p>
+                </div>
+                <div class="chef-names-item chef4">
+                    <img src="./images/chef2.png" alt="chef4">
+                    <h3>Ferry Sauwi</h3>
+                    <p>Chef</p>
+                </div>
+            </div>
+            <button id="viewAll">
+                View all
+            </button>
+        </section>
+
+        <article class="customer-comments">
+            <h2>Our customers say</h2>
+            <div class="customer-comments-slider center">
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer1.png" alt="customer-photo1">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer2.png" alt="customer-photo2">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer3.png" alt="customer-photo3">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile">
+                    <img src="./images/customer-comments/customer4.png" alt="customer-photo4">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer5.png" alt="customer-photo5">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer6.png" alt="customer-photo6">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+                <div class="customer-profile" hidden>
+                    <img src="./images/customer-comments/customer7.png" alt="customer-photo7">
+                    <h4>Starla Virgoun</h4>
+                    <p>Financial advisor</p>
+                    <blockquote>
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at
+                        eleifend proin. Congue nibh nulla malesuada ultricies nec quam
+                        <img src="./images/customer-comments/quotes.svg" alt="quotes" class="quotes-right">
+                    </blockquote>
+                </div>
+
+                <div class="customer-pagination">
+                    <img src="./images/customer-comments/customer1.png" alt="customer1" class="customer1">
+                    <img src="./images/customer-comments/customer2.png" alt="customer2" class="customer2">
+                    <img src="./images/customer-comments/customer3.png" alt="customer3" class="customer3">
+                    <img src="./images/customer-comments/customer4.png" alt="customer4" class="customer4">
+                    <img src="./images/customer-comments/customer5.png" alt="customer5" class="customer5">
+                    <img src="./images/customer-comments/customer6.png" alt="customer6" class="customer6">
+                    <img src="./images/customer-comments/customer7.png" alt="customer7" class="customer7">
+                </div>
+
+            </div>
+
+        </article>
+
+        <section class="working-hours">
+            <div class="bkg-working-hours center">
+                <h3>we are open from</h3>
+                <div class="working-hours-schedule">
+                    <p class="working-days">Monday-Sunday</p>
+                    Launch : Mon-Sun : 11:00am-02:00pm
+                    <div class="dinner-working-hours">
+                        <div class="dinner-working-hours-item">
+                            Dinner : sunday :
+                        </div>
+                        <div class="dinner-working-hours-item">
+                            04:00pm-09:00pm</div>
+                        <div class="dinner-working-hours-item">
+                            04:00pm-09:00pm
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-working-hours">
+                    <div class="btn-working-hours-item">
+                        <a href="#" class="orange-green-btns">Order now</a>
+                    </div>
+                    <div class="btn-working-hours-item">
+                        <a href="#" class="orange-green-btns">Reservation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-wrapper center">
+                <div class="footer-social">
+                    <div class="logo">
+                        <a href="./homepage.html" class="logo-letter">D</a>
+                        <h3 class="logo-name">Delizi<span class="logo-name-orange">oso</span></h3>
+                    </div>
+                    <p class="footer-descr">
+                        Viverra gravida morbi egestas facilisis tortor netus non duis tempor.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="http://twitter.com/" target="_blank">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./images/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/facebook.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-pages">
+                    <h4>Page</h4>
+                    <menu>
+                        <li><a href="./homepage.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="#">Order online</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Reservation</a></li>
+                    </menu>
+                </div>
+                <div class="footer-information">
+                    <h4>Information</h4>
+                    <menu>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Event</a></li>
+                    </menu>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Get in touch</h4>
+                    <menu>
+                        <li>
+                            <p>3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</p>
+                        </li>
+                        <li><a href="mailto:delizioso@gmail.com">delizioso@gmail.com</a></li>
+                        <li><a href="tel:+12345678901">+123 4567 8901</a></li>
+                    </menu>
+                </div>
+            </div>
+            <p class="copyright">Copyright &#169; 2022 Delizioso</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/viewAll.js"></script>
+
+</body>
+
+</html>

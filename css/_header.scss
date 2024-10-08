@@ -1,0 +1,208 @@
+@import 'common';
+@import 'mixin';
+@import 'var';
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 51px;
+    font-family: $font-family;
+
+    @include scl(1250px) {
+        justify-content: space-between;
+    }
+
+    @include scl(768px) {
+        justify-content: flex-start;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        margin-right: 99px;
+
+        @include scl(1250px) {
+            margin-right: 0;
+        }
+
+        @include scl(768px) {
+            flex-grow: 1;
+        }
+    }
+
+    .main-navigation {
+        margin-right: 80px;
+
+        @include scl(1250px) {
+            margin-right: 0;
+        }
+
+        @include scl(768px) {
+            order: 1;
+            margin-left: 18px;
+        }
+
+        nav {
+
+            ul {
+                display: flex;
+                gap: 45px;
+
+                @include scl(1024px) {
+                    gap: 15px;
+                }
+
+                @include scl(768px) {
+                    display: none;
+                }
+
+                li {
+                    a {
+                        font-size: 14px;
+                        color: $darkOrange;
+
+                        @include scl(1024px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    a:hover {
+                        color: $orange;
+                    }
+                }
+            }
+
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 999;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-content: center;
+                row-gap: 10px;
+                background-color: rgb(63, 167, 47, 0.7);
+
+                li {
+                    a {
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        img {
+            display: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1000;
+
+            @include scl(768px) {
+                display: block;
+            }
+        }
+    }
+
+    .header-btns {
+        display: flex;
+        gap: 25px;
+
+        @include scl(1024px) {
+            gap: 10px;
+        }
+
+        .basket {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            border-radius: 100%;
+            background-color: #d0ccc71a;
+
+            .counter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                position: absolute;
+                top: 10%;
+                right: 10%;
+                font-weight: 500;
+                font-size: 8px;
+                color: $white;
+                background-color: #ff3838;
+            }
+        }
+    }
+
+    .log-in {
+
+        @include scl(768px) {
+            display: none;
+        }
+
+        .log-in-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 112px;
+            height: 50px;
+            border: none;
+            border-radius: 133px;
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+            background: $green;
+
+            @include scl(768px) {
+                display: none;
+            }
+        }
+
+        .log-in-btn-link {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 112px;
+            height: 50px;
+            border: none;
+            border-radius: 133px;
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+            background: $green;
+
+            @include scl(768px) {
+                display: flex;
+            }
+        }
+    }
+
+    .mobile-log-in {
+        position: fixed;
+        margin: auto;
+        top: 60%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        .log-in-btn-link {
+            background-color: $orange;
+        }
+    }
+}
