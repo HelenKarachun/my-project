@@ -132,7 +132,7 @@
 
                     @include scl(480px) {
                         width: auto;
-                        height: auto;                    
+                        height: auto;
                     }
                 }
 
@@ -142,7 +142,7 @@
                     color: #5c4529;
 
                     @include scl(480px) {
-                        font-size: 12px;                
+                        font-size: 12px;
                     }
                 }
             }
@@ -159,7 +159,7 @@
                 }
 
                 @include scl(480px) {
-                    font-size: 12px;                
+                    font-size: 12px;
                 }
             }
         }
@@ -177,37 +177,36 @@
             }
 
             @include scl(480px) {
-                font-size: 12px;                
+                font-size: 12px;
             }
         }
+    }
 
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            width: 100%;
-            padding: 17px 0;
-            border: 1px solid #B6A38B;
-            border-radius: 10px;
-            background-color: $white;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 17px 0;
+        border: 1px solid #B6A38B;
+        border-radius: 10px;
+        background-color: $white;
+
+        @include scl(480px) {
+            gap: 10px;
+            padding: 15px 0;
+        }
+
+        span {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            color: #311f09;
 
             @include scl(480px) {
-                gap: 10px;
-                padding: 15px 0;
-            }
-
-            span {
-                font-family: $font-family;
-                font-weight: 500;
-                font-size: 20px;
-                color: #311f09;
-
-                @include scl(480px) {
-                    font-size: 12px;
-                }
+                font-size: 12px;
             }
         }
-
     }
 }
